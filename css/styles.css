@@ -1,3 +1,40 @@
+/* GLOBAL */
+body{
+	font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+	line-height: 32px;
+}
+
+
+/* HOME PAGE */
 img{
 	width: 400px;
 }
+
+/* BIO PAGE */
+.bio h2, .bio h3{
+	font-family: monaco, Consolas, 'Lucida Console', monospace;
+	text-align: center;
+}
+
+.bio h1{
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.bio section{
+	float: left;
+	width: 500px;
+}
+.bio article{
+	background: teal;
+	margin: 0 auto;
+	width: 1000px;
+}
+.bio-content{
+
+}
+.resume-content{
+
+}
+
+/* STYLE TILE */
