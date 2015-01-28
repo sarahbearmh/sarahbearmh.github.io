@@ -3,6 +3,26 @@ body{
 	font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
 	line-height: 32px;
 }
+p{
+	font-family: 'Indie Flower', cursive;
+}
+
+/* NAV */
+nav a:link, 
+nav a:visited{
+  color: #3EA2B2;
+  text-decoration: none;
+  
+}
+nav a:focus{
+  border: 2px solid red;
+}
+nav a:hover{
+  background: #FF7D15;
+}
+nav a:active{
+  color: #15DEFF;
+}
 
 
 /* HOME PAGE */
@@ -37,4 +57,4 @@ img{
 
 }
 
-/* STYLE TILE */
+/* STYLE TILE 
