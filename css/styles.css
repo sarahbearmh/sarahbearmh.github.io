@@ -44,17 +44,26 @@ img{
 .bio section{
 	float: left;
 	width: 500px;
+	margin: 0 auto;
 }
 .bio article{
 	background: teal;
 	margin: 0 auto;
 	width: 1000px;
 }
-.bio-content{
-
+.bio-content a:link{
+	color: #97c21c;
+	text-decoration: none;
+}
+.bio-content a:visited{
+	text-decoration: none;
+	color: #999;
 }
 .resume-content{
 
 }
-
+/*.clearfix{
+	float: none;
+	clear: both;
+}*/
 /* STYLE TILE 
