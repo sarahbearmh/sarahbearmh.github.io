@@ -26,9 +26,6 @@ nav a:visited{
   text-decoration: none;
   
 }
-nav a:focus{
-  border: 5px dotted #15DEFF;
-}
 nav a:hover{
   background: #FF7D15;
 }
@@ -38,8 +35,15 @@ nav a:active{
 nav li{
   list-style-type: none;
   display: inline;
-  margin: 0 20px;
+  margin: 10px 20px;
   font-size: 1.5em;
+  text-align: center;
+  padding: 0 5px;
+  float: left;
+  overflow: hidden;
+  background-color:  rgba(255, 125, 21, 0.95);
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  width: 150px;
 }
 
 
