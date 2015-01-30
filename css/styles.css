@@ -52,10 +52,13 @@ img{
 .bio{
   font-family: 'Shadows Into Light', cursive;
   font-weight: 600;
+  background: url(../img/cork.jpg) repeat;
+  background-size: 500px 700px;
 }
 .bio h2, .bio h3{
 	font-family: monaco, Consolas, 'Lucida Console', monospace;
 	text-align: center;
+  font-size: 2em;
 }
 
 .bio h1{
@@ -113,14 +116,11 @@ img{
   letter-spacing: 2px;
 }
 /* Cinch Link */
-.cinch-site:link{
+.cinch-site:link,
+.cinch-site:visited{
   color: #97c21c;
   text-decoration: none;
   padding: 0px 3px;
-  font-weight: bolder;
-}
-.cinch-site:visited{
-  color: #999;
   font-weight: bolder;
 }
 .cinch-site:hover{
@@ -130,13 +130,37 @@ img{
   font-weight: bolder;
 }
 
-.extra{
+.note{
   text-align: left;
   padding: 0 10px;
+  float: left;
+  margin: 20px 10px;
   overflow: hidden;
-  border: 5px solid #3EA2B2;
-  border-radius: 25px;
-  background-color:  rgba(255, 125, 21, 0.7);
+  background-color:  rgba(255, 125, 21, 0.95);
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  width: 200px;
+}
+/* Note rotation taken from http://code.tutsplus.com/tutorials/create-a-sticky-note-effect-in-5-easy-steps-with-css3-and-html5--net-13934 */
+.note:nth-child(even){
+  -o-transform:rotate(4deg);
+  -webkit-transform:rotate(4deg);
+  -moz-transform:rotate(4deg);
+  position:relative;
+  top:5px;
+}
+.note:nth-child(3n){
+  -o-transform:rotate(-3deg);
+  -webkit-transform:rotate(-3deg);
+  -moz-transform:rotate(-3deg);
+  position:relative;
+  top:-5p
+}
+.note:nth-child(5n){
+  -o-transform:rotate(5deg);
+  -webkit-transform:rotate(5deg);
+  -moz-transform:rotate(5deg);
+  position:relative;
+  top:-10px;
 }
 
 .clearfix{
