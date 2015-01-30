@@ -131,7 +131,7 @@ img{
 }
 .bio .contact-info{ 
   background-image: 
-                    linear-gradient( to bottom, rgba(62, 163, 178, 0.5), rgba(255, 255, 255, 0.5)),
+                    linear-gradient( to top, rgba(62, 163, 178, 0.5), rgba(255, 255, 255, 0.5)),
                     url("../img/ninja.jpg");
    background-repeat: no-repeat;
   background-size: cover;
