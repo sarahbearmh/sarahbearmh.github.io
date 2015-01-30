@@ -12,137 +12,6 @@ body{
 	font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
 	line-height: 32px;
 }
-
-/* NAV */
-nav{
-  font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
-  line-height: 32px;
-  width: 90%;
-  margin: 0 auto;
-}
-nav a:link, 
-nav a:visited{
-  color: #3EA2B2;
-  text-decoration: none;
-  
-}
-nav a:hover{
-  background: #FF7D15;
-}
-nav a:active{
-  color: #15DEFF;
-}
-nav li{
-  list-style-type: none;
-  display: inline;
-  margin: 10px 20px;
-  font-size: 1.5em;
-  text-align: center;
-  padding: 0 5px;
-  float: left;
-  overflow: hidden;
-  background-color:  rgba(255, 125, 21, 0.95);
-  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
-  width: 150px;
-}
-
-
-/* HOME PAGE */
-img{
-	width: 400px;
-}
-
-/* BIO PAGE */
-.bio{
-  font-family: 'Shadows Into Light', cursive;
-  font-weight: 600;
-  background: url(../img/cork.jpg) repeat;
-  background-size: 500px 700px;
-}
-.bio h2, .bio h3{
-	font-family: monaco, Consolas, 'Lucida Console', monospace;
-	text-align: center;
-  font-size: 2em;
-}
-
-.bio h1{
-	text-transform: uppercase;
-	letter-spacing: 2px;
-}
-
-.bio section{
-	float: left;
-	width: 45%;
-	margin: 0 auto;
-}
-.bio article{
-	margin: 0 auto;
-	width: 90%;
-}
-
-
-.bio-content a:link{
-	color: #97c21c;
-	text-decoration: none;
-}
-.bio-content a:visited{
-	text-decoration: none;
-	color: #999;
-}
-.bio .contact-info{ 
-  background-image: 
-                    linear-gradient( to bottom, rgba(62, 163, 178, 0.5), rgba(255, 255, 255, 0.5)),
-                    url("../img/ninja.jpg");
-   background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-  border: 5px dotted #FF7D15;
-  border-radius: 25px;
-  width:90%;
-  margin: auto;
-}
-.bio li{
-  list-style-position: inside;
-}
-
-/* contact info */
-.contact-info a:link, 
-.contact-info a:visited{
-  color: #FF7D15;
-  text-decoration: none;
-  font-size: 1.2em;
-  letter-spacing: 2px;
-  padding: 0 5px;
-  
-}
-.contact-info a:hover{
-  border: 2px solid #15DEFF;
-  background: #15DEFF;
-  border-radius: 20px;
-  letter-spacing: 2px;
-}
-.contact-info a:active{
-  color: #15DEFF;
-  letter-spacing: 2px;
-}
-
-
-
-/* Cinch Link */
-.cinch-site:link,
-.cinch-site:visited{
-  color: #97c21c;
-  text-decoration: none;
-  padding: 0px 3px;
-  font-weight: bolder;
-}
-.cinch-site:hover{
-  background: #97c21c;
-  color: #fff;
-  padding: 0px 3px;
-  font-weight: bolder;
-}
-
 .note{
   text-align: left;
   padding: 0 5px;
@@ -178,12 +47,144 @@ img{
   position:relative;
   top:-10px;
 }
-
 .clearfix{
-	float: none;
-	clear: both;
+  float: none;
+  clear: both;
 }
+/* END GLOBAL */
 
+
+/* NAV */
+nav{
+  font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+  line-height: 32px;
+  width: 90%;
+  margin: 10px auto;
+}
+nav a:link, 
+nav a:visited{
+  color: #3EA2B2;
+  text-decoration: none;
+  
+}
+nav a:hover{
+  background: #FF7D15;
+}
+nav a:active{
+  color: #15DEFF;
+}
+nav li{
+  list-style-type: none;
+  display: inline;
+  margin: 20px 20px;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 0 5px;
+  float: left;
+  overflow: hidden;
+  background-color:  rgba(255, 125, 21, 0.95);
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  width: 150px;
+}
+/* END NAV */
+
+
+/* HOME PAGE */
+img{
+	width: 400px;
+}
+/* END HOME PAGE */
+
+
+/* BIO PAGE */
+.bio{
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: 600;
+  background: url(../img/cork.jpg) repeat;
+  background-size: 500px 700px;
+}
+.bio h2, .bio h3{
+	font-family: monaco, Consolas, 'Lucida Console', monospace;
+	text-align: center;
+  font-size: 2em;
+}
+.bio h1{
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+.bio section{
+	float: left;
+	width: 45%;
+	margin: 0 auto;
+}
+.bio article{
+	margin: 0 auto;
+	width: 90%;
+}
+.bio-content a:link{
+	color: #97c21c;
+	text-decoration: none;
+}
+.bio-content a:visited{
+	text-decoration: none;
+	color: #999;
+}
+.bio .contact-info{ 
+  background-image: 
+                    linear-gradient( to bottom, rgba(62, 163, 178, 0.5), rgba(255, 255, 255, 0.5)),
+                    url("../img/ninja.jpg");
+   background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  border: 5px dotted #FF7D15;
+  border-radius: 25px;
+  width:90%;
+  margin: auto;
+}
+.bio li{
+  list-style-position: inside;
+}
+/* END BIO PAGE */
+
+
+/* contact info */
+.contact-info a:link, 
+.contact-info a:visited{
+  color: #FF7D15;
+  text-decoration: none;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  padding: 0 5px;
+  
+}
+.contact-info a:hover{
+  border: 2px solid #15DEFF;
+  background: #15DEFF;
+  border-radius: 20px;
+  letter-spacing: 2px;
+}
+.contact-info a:active{
+  color: #15DEFF;
+  letter-spacing: 2px;
+}
+/* END contact info */
+
+
+/* Cinch Link */
+.cinch-site:link,
+.cinch-site:visited{
+  color: #97c21c;
+  text-decoration: none;
+  padding: 0px 3px;
+  font-weight: bolder;
+}
+.cinch-site:hover{
+  background: #97c21c;
+  color: #fff;
+  padding: 0px 3px;
+  font-weight: bolder;
+}
+/* END Cinch Link */
 
 
 /* MEDIA QUERIES */
@@ -208,5 +209,7 @@ img{
       margin: 20px auto;
   }
 }
+/* END MEDIA QUERIES */
+
 
 /* STYLE TILE 
