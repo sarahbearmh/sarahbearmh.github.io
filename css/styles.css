@@ -6,7 +6,7 @@ Orange: #FF7D15;
 Light Orange: #FF923A;
 ------------
 Lime Green: #5DFF2F;
-Pink Coral: #E82750;
+Pink red: #FF0233;
 Tealy Blue: #0CE8B0;
 Yellow: #FFF633;
 */
@@ -38,7 +38,7 @@ body{
   -ms-transform:rotate(4deg);
   position:relative;
   top:5px;
-  background-color: rgba(12, 232, 176, 0.95);
+  background-color: rgba(12, 232, 176, 0.95);/*blue note */
 }
 .note:nth-child(3n){
   -o-transform:rotate(-3deg);
@@ -46,7 +46,7 @@ body{
   -moz-transform:rotate(-3deg);
     -ms-transform:rotate(-3deg);
   position:relative;
-  background-color: rgba(255, 246, 51, 0.95);
+  background-color: rgba(255, 246, 51, 0.95);/* yellow note */
   top:-5p
 }
 .note:nth-child(5n){
@@ -54,6 +54,7 @@ body{
   -webkit-transform:rotate(5deg);
   -moz-transform:rotate(5deg);
   -ms-transform:rotate(5deg);
+  background-color: rgba(255, 2, 51, 0.95);
   position:relative;
   top:-10px;
 }
@@ -92,7 +93,7 @@ nav li{
   padding: 0 5px;
   float: left;
   overflow: hidden;
-  background-color:  rgba(255, 125, 21, 0.95);
+  background-color:  rgba(255, 125, 21, 0.95);/* pink red note */
   box-shadow: 5px 5px 7px rgba(33,33,33,.7);
   width: 150px;
 }
