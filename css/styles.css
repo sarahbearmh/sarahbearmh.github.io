@@ -4,6 +4,11 @@ Sky blue: #90F0FF;
 Sea blue: #15DFFF;
 Orange: #FF7D15;
 Light Orange: #FF923A;
+------------
+Lime Green: #5DFF2F;
+Pink Coral: #E82750;
+Tealy Blue: #0CE8B0;
+Yellow: #FFF633;
 */
 
 
@@ -32,12 +37,14 @@ body{
   -moz-transform:rotate(4deg);
   position:relative;
   top:5px;
+  background-color: rgba(12, 232, 176, 0.95);
 }
 .note:nth-child(3n){
   -o-transform:rotate(-3deg);
   -webkit-transform:rotate(-3deg);
   -moz-transform:rotate(-3deg);
   position:relative;
+  background-color: rgba(255, 246, 51, 0.95);
   top:-5p
 }
 .note:nth-child(5n){
@@ -175,13 +182,13 @@ img{
 .cinch-site:visited{
   color: #97c21c;
   text-decoration: none;
-  padding: 0px 3px;
+  padding: 0px 5px;
   font-weight: bolder;
 }
 .cinch-site:hover{
   background: #97c21c;
   color: #fff;
-  padding: 0px 3px;
+  padding: 0px 5px;
   font-weight: bolder;
 }
 /* END Cinch Link */
