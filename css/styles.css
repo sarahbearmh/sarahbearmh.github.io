@@ -1,13 +1,25 @@
+/* Colors:
+Gray blue: #3EA2B2;
+Sky blue: #90F0FF;
+Sea blue: #15DFFF;
+Orange: #FF7D15;
+Light Orange: #FF923A;
+*/
+
+
 /* GLOBAL */
 body{
 	font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
 	line-height: 32px;
 }
-p{
-	font-family: 'Indie Flower', cursive;
-}
 
 /* NAV */
+nav{
+  font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+  line-height: 32px;
+  width: 90%;
+  margin: 0 auto;
+}
 nav a:link, 
 nav a:visited{
   color: #3EA2B2;
@@ -15,7 +27,7 @@ nav a:visited{
   
 }
 nav a:focus{
-  /**/
+  border: 5px dotted #15DEFF;
 }
 nav a:hover{
   background: #FF7D15;
@@ -37,6 +49,10 @@ img{
 }
 
 /* BIO PAGE */
+.bio{
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: 600;
+}
 .bio h2, .bio h3{
 	font-family: monaco, Consolas, 'Lucida Console', monospace;
 	text-align: center;
@@ -49,13 +65,15 @@ img{
 
 .bio section{
 	float: left;
-	width: 500px;
+	width: 49%;
 	margin: 0 auto;
 }
 .bio article{
 	margin: 0 auto;
-	width: 1000px;
+	width: 90%;
 }
+
+
 .bio-content a:link{
 	color: #97c21c;
 	text-decoration: none;
@@ -64,46 +82,66 @@ img{
 	text-decoration: none;
 	color: #999;
 }
-.resume-content{
-
-}
 .bio .contact-info{ 
-  background: teal;
+  background-image: 
+                    linear-gradient( to bottom, rgba(62, 163, 178, 0.5), rgba(255, 255, 255, 0.5)),
+                    url("../img/ninja.jpg");
+   background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
+  border: 5px dotted #FF7D15;
+  border-radius: 25px;
 }
-
+/* contact info */
 .contact-info a:link, 
 .contact-info a:visited{
   color: #FF7D15;
   text-decoration: none;
   font-size: 1.2em;
+  letter-spacing: 2px;
+  padding: 0 5px;
   
 }
 .contact-info a:hover{
-  background: #3EA2B2;
+  border: 2px solid #15DEFF;
+  background: #15DEFF;
+  border-radius: 20px;
+  letter-spacing: 2px;
 }
 .contact-info a:active{
   color: #15DEFF;
+  letter-spacing: 2px;
 }
+/* Cinch Link */
 .cinch-site:link{
   color: #97c21c;
   text-decoration: none;
   padding: 0px 3px;
+  font-weight: bolder;
 }
 .cinch-site:visited{
   color: #999;
+  font-weight: bolder;
 }
 .cinch-site:hover{
   background: #97c21c;
   color: #fff;
   padding: 0px 3px;
+  font-weight: bolder;
+}
+
+.extra{
+  text-align: left;
+  padding: 0 10px;
+  overflow: hidden;
+  border: 5px solid #3EA2B2;
+  border-radius: 25px;
+  background-color:  rgba(255, 125, 21, 0.7);
 }
 
 .clearfix{
 	float: none;
 	clear: both;
 }
-.extra h3{
-  text-align: left;
-}
+
 /* STYLE TILE 
