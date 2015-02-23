@@ -1,0 +1,152 @@
+/* Colors
+9CB5BF
+68797F
+D0F2FF
+343C40
+BBDAE5
+*/
+body{
+	font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+	line-height: 32px;
+	color: white;
+	background: #343C40;
+}
+/* NAV */
+nav{
+  font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+  line-height: 32px;
+  width: 90%;
+  margin: 10px auto;
+  font-weight: 600;
+}
+nav ul{
+	max-width: 100%;
+	margin: 0 auto;
+	padding-left: 0;
+}
+nav li{
+  list-style-type: none;
+  display: inline;
+  margin: 20px 0;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 0 5px;
+  float: left;
+  overflow: hidden;
+  background-color:  #343C40;
+  box-shadow: 5px 5px 5px rgba(156,181,191,.7);
+  width: 22%;
+}
+nav ul a:first-child li{
+  border-radius: 10px 0 0 10px;
+}
+nav ul a:last-child li{
+  border-radius: 0 10px 10px 0;
+}
+nav a:link,
+nav a:visited{
+	color: #D0F2FF;
+}
+nav a:hover{
+	color: #BBDAE5;
+}
+/* END NAV */
+.header{
+
+	background: linear-gradient( to top, rgba(156, 181, 191, 0.5), rgba(156, 181, 191, 0.5)), url("../img/sunset.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	height: 45%;
+	width: 100%;
+	position: fixed;
+	top:0;
+}
+
+.bio-content{
+	max-width: 90%;
+	margin: 2px auto;
+	float: none;
+}
+section{
+	float: left;
+	background: rgba(104, 121, 127, 0.8);
+	max-width: 48%;
+	margin: 0 5px ;
+	padding: 0 5px;
+	box-sizing: border-box;
+
+}
+
+article{
+	position: relative;
+	top: 400px;
+	height: 500px;
+	overflow-y: scroll;
+}
+
+.contact-info{
+	font-family: 'Pacifico', cursive;
+	margin: 0 auto;
+	max-width: 90%;
+	text-align: center;
+	letter-spacing: 2px;
+	font-size: 2em;
+	line-height: 2em;
+}
+.contact-info a:link,
+.contact-info a:visited{
+	color: white;
+	text-decoration: none;
+}
+.contact-info a:hover{
+	color:#BBDAE5;
+}
+
+/* Cinch Link */
+.cinch-site:link,
+.cinch-site:visited{
+  color: #97c21c;
+  text-decoration: none;
+  padding: 0px 5px;
+  font-weight: bolder;
+}
+.cinch-site:hover{
+  background: #97c21c;
+  color: #fff;
+  padding: 0px 5px;
+  font-weight: bolder;
+}
+/* END Cinch Link */
+
+/* Clearfix - Oo Not Remove */
+.clearfix {clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}
+
+@media(max-width: 546px){
+   nav ul,
+   nav ul a li{
+   	width: 95%;
+  	margin: 0 auto;
+   }
+
+   nav ul a:first-child li{
+   		border-radius: 10px 10px 0 0;
+   	}
+   nav ul a:last-child li{
+   	border-radius: 0 0 10px 10px;
+   }
+   .contact-info{
+   	font-size: 1.5em;
+   }
+   .contact-info h1,
+   .contact-info h2{
+   	margin-top: 20px;
+   	margin-bottom: 5px;
+   }
+   .contact-info a:link,
+   .contact-info a:link:before{
+   	content: "";
+   	position: absolute;
+   	top: 85%;
+   	left:8%;
+   }
+}
