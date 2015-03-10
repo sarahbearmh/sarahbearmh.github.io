@@ -174,6 +174,7 @@ img{
   margin-bottom: 10px;
 }
 .basic h1{
+  font-family: monaco, Consolas, 'Lucida Console', monospace;
   margin: 10px 0;
   font-size: 16px;
 }
@@ -189,8 +190,15 @@ img{
   line-height: 120%;
 }
 .basic p{
+  font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
   margin-top: 0;
   padding-left: 40px;
+  display: inline-block;
+}
+p.date{
+  font-size: .75em;
+  padding-left: 10px;
+  margin-bottom: auto;
 }
 .basic hr{
       display: block;
@@ -213,9 +221,6 @@ img{
   width: 50%;
   float: left;
   margin-bottom: 2px;
-}
-.basic .extras{
-  margin: 0;
 }
 /*END BASIC BIO*/
 
@@ -288,9 +293,13 @@ img{
         display: none !important;
     }
     .basic .extras{
-        width: 45%;
-        float: left;
-        margin: auto;
+      width: 45%;
+      float: left;
+      margin-left: 5%;
+    }
+    .basic section:last-of-type{
+
+      margin-left: auto;
     }
     .basic .extras hr{
       width: 180%;
