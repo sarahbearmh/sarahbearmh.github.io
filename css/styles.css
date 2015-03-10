@@ -314,6 +314,9 @@ p.date{
       width: 180%;
       margin: 0 10%;
     }
+    abbr[title]{
+      border-bottom: none;
+    }
 }
 /* END MEDIA QUERIES */
 
