@@ -173,10 +173,16 @@ img{
 .basic .contact-info{
   margin-bottom: 10px;
 }
+.basic .contact-info p{
+  float:right;
+  text-align: right;
+}
 .basic h1{
   font-family: monaco, Consolas, 'Lucida Console', monospace;
   margin: 10px 0;
   font-size: 16px;
+  color: black;
+  display: inline-block;
 }
 .basic h2,
 .basic h3{
@@ -186,7 +192,7 @@ img{
 .basic section{
   width: 90%;
   margin: auto;
-  font-size: 12px;
+  font-size: 11px;
   line-height: 120%;
 }
 .basic p{
@@ -208,6 +214,9 @@ p.date{
       height: 1px;
       margin: 0 5%;
       border-top: solid 1px #15DEFF;
+}
+.basic ul{
+  margin: 2px auto;
 }
 .edu li{
   width: 50%;
