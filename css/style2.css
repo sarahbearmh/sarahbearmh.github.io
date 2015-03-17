@@ -9,7 +9,48 @@ body{
 	font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
 	line-height: 32px;
 	color: white;
-	background: #343C40;
+}
+.bg{
+  background: url("../img/LumbergFlower.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  overflow-y: scroll;
+}
+p{
+
+  display: inline-block;
+}
+p.date{
+  font-size: .75em;
+  padding-left: 10px;
+  margin-bottom: auto;
+}
+section{
+  float: left;
+  background: rgba(104, 121, 127, 0.85);
+  padding: 0 5px;
+  box-sizing: border-box;
+  max-width: 90%;
+  margin: 0 auto;
+  float: none;
+
+}
+article{
+  position: relative;
+  height: 500px;
+  /*overflow-y: scroll;*/
+}
+h1{
+  font-family: 'Pacifico', cursive;
+  letter-spacing: 2px;
+  font-size: 3em;
+  line-height: 1em;
+  color: rgb(214, 60, 58);
+  text-shadow: 2px 2px rosybrown;
 }
 /* NAV */
 nav{
@@ -35,7 +76,7 @@ nav li{
   overflow: hidden;
   background-color:  #343C40;
   box-shadow: 5px 5px 5px rgba(156,181,191,.7);
-  width: 22%;
+  width: 18%;
 }
 nav ul a:first-child li{
   border-radius: 10px 0 0 10px;
@@ -51,47 +92,23 @@ nav a:hover{
 	color: #BBDAE5;
 }
 /* END NAV */
-.header{
 
-	background: linear-gradient( to top, rgba(156, 181, 191, 0.5), rgba(156, 181, 191, 0.5)), url("../img/sunset.jpg");
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	height: 45%;
-	width: 100%;
-	position: fixed;
-	top:0;
+.skills ul li{
+  width: 50%;
+  float: left;
+  margin-bottom: 2px;
 }
 
-.bio-content{
-	max-width: 90%;
-	margin: 2px auto;
-	float: none;
-}
-section{
-	float: left;
-	background: rgba(104, 121, 127, 0.8);
-	max-width: 48%;
-	margin: 0 5px ;
-	padding: 0 5px;
-	box-sizing: border-box;
-
-}
-
-article{
-	position: fixed;
-	top: 46%;
-	height: 500px;
-	overflow-y: scroll;
+.split{
+  width: 50%;
+  float: left;
+  margin-bottom: 2px;
 }
 
 .contact-info{
-	font-family: 'Pacifico', cursive;
-	margin: 0 auto;
-	max-width: 90%;
-	text-align: center;
-	letter-spacing: 2px;
-	font-size: 1.5em;
-	line-height: 1em;
+  max-width: 90%;
+  text-align: center;
+  margin: 0 auto;
 }
 .contact-info a:link,
 .contact-info a:visited{
@@ -121,7 +138,35 @@ article{
 /* Clearfix - Oo Not Remove */
 .clearfix {clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}
 
-@media(max-width: 546px){
+@media(max-width: 470px){
+  .skills ul li{
+    width: 90%;
+    float: left;
+    margin-bottom: 2px;
+  }
+}
+@media(max-width: 535px){
+  .split{
+  width: 90%;
+  float: none;
+  margin-bottom: 2px;
+}
+}
+@media(max-width:612px) and (min-width: 470px){
+  .skills ul li:first-child{
+  width: 90%;
+  float: left;
+  margin-bottom: 2px;
+}
+.skills ul li,
+.skills ul li ul li:first-child{
+  width: 50%;
+  float: left;
+  margin-bottom: 2px;
+}
+}
+
+@media(max-width: 627px){
    nav ul,
    nav ul a li{
    	width: 95%;
@@ -150,4 +195,9 @@ article{
    	top: 85%;
    	left:8%;
    }
+}
+@media(min-width:1130px){
+  nav li{
+    width:19%;
+  }
 }
