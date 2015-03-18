@@ -1,14 +1,9 @@
-/* Colors
-9CB5BF
-68797F
-D0F2FF
-343C40
-BBDAE5
-*/
+/* GLOBAL */
 body{
-	font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
-	line-height: 32px;
-	color: white;
+font-family: 'Nunito', sans-serif;
+color: white;
+font-size: .9em;
+opacity: 1;
 }
 .bg{
   background: url("../img/LumbergFlower.jpg");
@@ -21,7 +16,6 @@ body{
   overflow-y: scroll;
 }
 p{
-
   display: inline-block;
 }
 p.date{
@@ -32,12 +26,12 @@ p.date{
 section{
   float: left;
   background: rgba(104, 121, 127, 0.85);
+  background-size: cover;
   padding: 0 5px;
   box-sizing: border-box;
   max-width: 90%;
-  margin: 0 auto;
+  margin: 0 auto 10px auto;
   float: none;
-
 }
 article{
   position: relative;
@@ -51,7 +45,15 @@ h1{
   line-height: 1em;
   color: rgb(214, 60, 58);
   text-shadow: 2px 2px rosybrown;
+  
+  text-align: center;
 }
+h2, h3{
+  margin: 0 auto;
+  font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+}
+
+
 /* NAV */
 nav{
   font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
@@ -91,8 +93,11 @@ nav a:visited{
 nav a:hover{
 	color: #BBDAE5;
 }
+
 /* END NAV */
 
+
+/* BIOGRAPHY */
 .skills ul li{
   width: 50%;
   float: left;
@@ -107,7 +112,6 @@ nav a:hover{
 
 .contact-info{
   max-width: 90%;
-  text-align: center;
   margin: 0 auto;
 }
 .contact-info a:link,
@@ -201,3 +205,78 @@ nav a:hover{
     width:19%;
   }
 }
+
+.stile .bg{
+  background: url("../img/LumbergFlower.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  overflow-y: scroll;
+}
+.stile section {
+    float: left;
+  background: rgba(104, 121, 127, 0.85);
+  background-size: cover;
+  padding: 0 5px;
+  box-sizing: border-box;
+  max-width: 90%;
+  margin: 0 auto 10px auto;
+  float: none;
+}
+ 
+.color-1,
+.color-2,
+.color-3,
+.pattern-1,
+.pattern-2,
+.pattern-3, 
+.imagery-1,
+.imagery-2,
+.imagery-3 {
+  border: 1px solid #000;
+  float: left;
+  margin: 0 10px;
+  height: 50px;
+  width: 50px;
+}
+.color-1{
+  background-color: #D63C3A;
+}
+.color-2{
+  background-color: #343C40;
+}
+.color-3{
+  background-color: #D0F2FF;
+}
+.pattern-1{
+  background: url("../img/crossword.png");
+  background-size: cover;
+}
+.pattern-2{
+  background: url("../img/squared_metal.png") no-repeat;
+  background-size: cover;
+}
+.pattern-3{
+  background: linear-gradient( to top, rgba(62, 163, 178, 0.5), rgba(255, 255, 255, 0.5));
+}
+/* Set Your Own Typography */
+ .stile{
+    font-family: 'Nunito', sans-serif;
+ }
+ 
+/* Set Your Own Margin & Padding */
+ h2, h3 {
+  font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+}
+p{
+  font-family: 'Nunito', sans-serif;
+}
+ 
+/* Clearfix - Oo Not Remove */
+.clearfix {clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}
+
+
+/* END STYLE TILE */
