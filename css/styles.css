@@ -1,0 +1,389 @@
+/* Colors:
+Gray blue: #3EA2B2;
+Sky blue: #90F0FF;
+Sea blue: #15DFFF;
+Orange: #FF7D15;
+Light Orange: #FF923A;
+------------
+Lime Green: #5DFF2F;
+Pink red: #FF0233;
+Tealy Blue: #0CE8B0;
+Yellow: #FFF633;
+*/
+
+
+/* GLOBAL */
+body{
+	font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+	line-height: 32px;
+}
+.note{
+  text-align: left;
+  padding: 0 5px;
+  float: left;
+  margin: 20px 10px;
+  overflow: hidden;
+  background-color:  rgba(255, 125, 21, 0.95);
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  width: 200px;
+}
+ h1{
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #FF923A;
+}
+a:link, 
+a:visited{
+  color: #3EA2B2;
+  text-decoration: none;
+  
+}
+a:hover{
+  background: #FF7D15;
+}
+a:active{
+  color: #15DEFF;
+}
+
+/* Note rotation taken from http://code.tutsplus.com/tutorials/create-a-sticky-note-effect-in-5-easy-steps-with-css3-and-html5--net-13934 */
+.note:nth-child(even){
+  -o-transform:rotate(4deg);
+  -webkit-transform:rotate(4deg);
+  -moz-transform:rotate(4deg);
+  -ms-transform:rotate(4deg);
+  position:relative;
+  top:5px;
+  background-color: rgba(12, 232, 176, 0.95);/*blue note */
+}
+.note:nth-child(3n){
+  -o-transform:rotate(-3deg);
+  -webkit-transform:rotate(-3deg);
+  -moz-transform:rotate(-3deg);
+    -ms-transform:rotate(-3deg);
+  position:relative;
+  background-color: rgba(255, 246, 51, 0.95);/* yellow note */
+  top:-5p
+}
+.note:nth-child(5n){
+  -o-transform:rotate(5deg);
+  -webkit-transform:rotate(5deg);
+  -moz-transform:rotate(5deg);
+  -ms-transform:rotate(5deg);
+  background-color: rgba(255, 2, 51, 0.95);/* pink red note */
+  position:relative;
+  top:-10px;
+}
+.clearfix{
+  float: none;
+  clear: both;
+}
+/* END GLOBAL */
+
+
+/* NAV */
+nav{
+  font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+  line-height: 32px;
+  width: 90%;
+  margin: 10px auto;
+  font-weight: 600;
+}
+
+nav li{
+  list-style-type: none;
+  display: inline;
+  margin: 20px 20px;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 0 5px;
+  float: left;
+  overflow: hidden;
+  background-color:  rgba(255, 125, 21, 0.95);
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  width: 150px;
+}
+/* END NAV */
+
+
+/* HOME PAGE */
+img{
+	width: 400px;
+}
+/* END HOME PAGE */
+
+
+/* BIO PAGE */
+.bio article{
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: 600;
+}
+.bio-background{
+  background: url(../img/cork.jpg) repeat;
+  background-size: 500px 700px;
+}
+.bio h2, .bio h3{
+	font-family: monaco, Consolas, 'Lucida Console', monospace;
+	text-align: center;
+  font-size: 2em;
+}
+.bio section{
+	float: left;
+	width: 45%;
+}
+.bio article{
+	margin: 0 auto;
+	width: 90%;
+}
+.bio-content{
+  margin: 0 0 0 5%;
+}
+.bio-content a:link{
+	color: #97c21c;
+	text-decoration: none;
+}
+.bio-content a:visited{
+	text-decoration: none;
+	color: #999;
+}
+.bio .contact-info{ 
+  background-image: 
+                    linear-gradient( to top, rgba(62, 163, 178, 0.5), rgba(255, 255, 255, 0.5)),
+                    url("../img/ninja.jpg");
+   background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  border: 5px dotted #FF7D15;
+  border-radius: 25px;
+  width:90%;
+  margin: auto;
+}
+.bio li{
+  list-style-position: inside;
+}
+/* END BIO PAGE */
+
+
+/* BASIC BIO*/
+.basic{
+  margin: auto;
+  width: 90%;
+}
+.basic .contact-info{
+  margin-bottom: 11px;
+}
+.basic .contact-info p{
+  padding-top: 1%;
+  float:right;
+  text-align: right;
+}
+.basic h1{
+  font-family: monaco, Consolas, 'Lucida Console', monospace;
+  margin: 10px 0;
+  font-size: 16px;
+  color: black;
+  display: inline-block;
+}
+.basic h2,
+.basic h3{
+  margin: 10px auto 5px; 
+  font-size: 14px;
+}
+.basic section{
+  width: 90%;
+  margin: auto;
+  font-size: 12px;
+  line-height: 120%;
+}
+.basic p{
+  font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+  margin-top: 0;
+  padding-left: 40px;
+  display: inline-block;
+}
+p.date{
+  font-size: .75em;
+  padding-left: 10px;
+  margin-bottom: auto;
+}
+.basic hr{
+      display: block;
+      width: 90%;
+      background:transparent;
+      border: none;
+      height: 1px;
+      margin: 0 5%;
+      border-top: solid 1px #15DEFF;
+}
+.basic ul{
+  margin: 2px auto;
+}
+.edu li{
+  width: 50%;
+  float: left;
+  margin-bottom: 10px;
+}
+.basic .skills{
+  width: 100%;
+}
+.basic .skills ul li{
+  width: 50%;
+  float: left;
+  margin-bottom: 2px;
+}
+/*END BASIC BIO*/
+
+
+/* contact info */
+.contact-info a:link, 
+.contact-info a:visited{
+  color: #FF7D15;
+  text-decoration: none;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  padding: 0 5px;
+  
+}
+.contact-info a:hover{
+  border: 2px solid #15DEFF;
+  background: #15DEFF;
+  border-radius: 20px;
+  letter-spacing: 2px;
+}
+.contact-info a:active{
+  color: #15DEFF;
+  letter-spacing: 2px;
+}
+/* END contact info */
+
+
+/* Cinch Link */
+.cinch-site:link,
+.cinch-site:visited{
+  color: #97c21c;
+  text-decoration: none;
+  padding: 0px 5px;
+  font-weight: bolder;
+}
+.cinch-site:hover{
+  background: #97c21c;
+  color: #fff;
+  padding: 0px 5px;
+  font-weight: bolder;
+}
+/* END Cinch Link */
+
+
+/* MEDIA QUERIES */
+@media screen(max-width: 1251px){
+  .note{
+    margin: 20px 15%;
+  }
+}
+@media(max-width: 726px){
+  .bio section{
+    float: none;
+    clear: both;
+    width: 90%;
+  }
+  .note{
+      margin: 20px 25%;
+  }
+
+}
+@media(max-width: 500px){
+   .note{
+      margin: 20px auto;
+  }
+}
+@media print{    
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+    .basic .extras{
+      width: 45%;
+      float: left;
+      margin-left: 5%;
+    }
+    .basic section:last-of-type{
+
+      margin-left: auto;
+    }
+    .basic .extras hr{
+      width: 180%;
+      margin: 0 10%;
+    }
+    abbr[title]{
+      border-bottom: none;
+    }
+}
+/* END MEDIA QUERIES */
+
+
+/* STYLE TILE */
+.stile{
+    background: url(../img/cork.jpg) repeat;
+  background-size: 500px 700px;
+}
+.stile section {
+  margin: 20px 0;
+}
+ 
+.color-1,
+.color-2,
+.color-3,
+.pattern-1,
+.pattern-2,
+.pattern-3, 
+.imagery-1,
+.imagery-2,
+.imagery-3 {
+  border: 1px solid #000;
+  float: left;
+  margin: 0 10px;
+  height: 50px;
+  width: 50px;
+}
+.color-1{
+  background-color: #FF7D15;
+}
+.color-2{
+  background-color: #15DFFF;
+}
+.color-3{
+  background-color: #3EA2B2;
+}
+.pattern-1{
+  background: url("../img/ninja.jpg");
+  background-size: cover;
+}
+.pattern-2{
+  background: url(../img/cork.jpg) repeat;
+  background-size: 500px 700px;
+}
+.pattern-3{
+  background: linear-gradient( to top, rgba(62, 163, 178, 0.5), rgba(255, 255, 255, 0.5));
+}
+/* Set Your Own Typography */
+ .stile .note{
+    font-family: 'Shadows Into Light', cursive;
+  font-weight: 600;
+ }
+ 
+/* Set Your Own Margin & Padding */
+ h2, h3 {
+  font-family: monaco, Consolas, 'Lucida Console', monospace;
+  font-size: 2em;
+}
+p{
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: 600;
+}
+ 
+/* Clearfix - Oo Not Remove */
+.clearfix {clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}
+
+
+/* END STYLE TILE */
