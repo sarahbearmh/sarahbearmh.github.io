@@ -45,7 +45,6 @@ h1{
   line-height: 1em;
   color: rgb(214, 60, 58);
   text-shadow: 2px 2px rosybrown;
-  
   text-align: center;
 }
 h2, h3{
@@ -86,12 +85,14 @@ nav ul a:first-child li{
 nav ul a:last-child li{
   border-radius: 0 10px 10px 0;
 }
-nav a:link,
-nav a:visited{
+a:link,
+a:visited{
 	color: #D0F2FF;
+  text-decoration: none;
 }
-nav a:hover{
+a:hover{
 	color: #BBDAE5;
+  text-decoration: none;
 }
 
 /* END NAV */
